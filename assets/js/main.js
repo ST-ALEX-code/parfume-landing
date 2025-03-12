@@ -167,8 +167,6 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-})();
-
 
   function openPopup() {
     document.getElementById("popup").style.display = "block";
@@ -179,3 +177,6 @@
     document.getElementById("popup").style.display = "none";
     document.getElementById("popupOverlay").style.display = "none";
   }
+})();
+
+
