@@ -1,10 +1,3 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -175,3 +168,14 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popupOverlay").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("popupOverlay").style.display = "none";
+  }
