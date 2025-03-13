@@ -49,8 +49,8 @@
         <a
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
-          ><img src="assets/img/logo.png" alt="" />
-          <!--<h1 class="sitename">Nordetanolis</h1>-->
+        >
+          <h1 class="sitename">Nordetanolis</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -86,8 +86,8 @@
                 </h1>
 
                 <p class="mb-4 mb-md-5">
-                  Nordetanolis is a Lithuanian wholesale perfume supplier of
-                  top-rated branded cosmetics and fragrances.
+                  Nordetanolis is a leading Latvian wholesale perfume supplier
+                  of top-rated branded cosmetics and mass market fragrances.
                 </p>
 
                 <div class="hero-buttons">
@@ -179,7 +179,7 @@
                 We are your partner in branded perfumes and cosmetics. The best
                 offer for trade from a supplier of original products with 20
                 years of experience. We are an international wholesaler based in
-                Lithuania.We are able to do what we do best all over the world:
+                Latvia.We are able to do what we do best all over the world:
                 buying and selling high quality cosmetic products of the highest
                 quality. The following values are of paramount importance to us.
               </p>
@@ -282,9 +282,10 @@
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <h2 class="banner-title">Perfume</h2>
               <p class="banner-text">
-                Original perfumery from France, Italy, Spain, Germany and Poland
-                at affordable prices. Leave your contacts and we will provide
-                favorable conditions for your business!
+                Perfumery wholesale original perfumery from France, Italy,
+                Spain, Germany and Poland at affordable prices leave your
+                contacts and we will provide favorable conditions for your
+                business!
               </p>
               <a href="#contact" class="btn btn-primary" onclick="openPopup()"
                 >Get offer</a
@@ -421,6 +422,34 @@
         </div>
       </section>
       <!-- /Brands Section -->
+
+      <!-- Offer Section -->
+      <section id="new-section" class="banner section py-5">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <h2 class="banner-title">Ready to Get Offer?</h2>
+              <p class="banner-text">
+                Do you need realiable wholesale perfume supplier for your
+                business need? Look no more further! Prime Stock is here to
+                provide you with extensive selection of global brands. All you
+                have to do is fill the form and get offer.
+              </p>
+              <a href="#contact" class="btn btn-primary" onclick="openPopup()">
+                Get offer
+              </a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <img
+                src="assets/img/brand.png"
+                alt="Luxury Fragrances"
+                class="img-fluid rounded-4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Offer Section -->
     </main>
 
     <footer id="footer" class="footer light-background">
@@ -428,8 +457,7 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="" />
-              <!--<span class="sitename">Nordetanolis</span>-->
+              <span class="sitename">Nordetanolis</span>
             </a>
             <p>
               The best offer for trade from a supplier of original products with
@@ -449,13 +477,11 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4>Contact Us</h4>
             <ul>
-              <p>Vilnus, Vilkpedes str. 22,</p>
-              <p>LT-03151, Lithuania</p>
+              <p>Vilnus</p>
+              <p>LT-03151, Lithua</p>
               <p class="mt-4">
                 <strong>Phone:</strong> <span>+370 637 77844</span>
               </p>
-              <strong>E-mail:</strong>
-              <span>info@nordetanolis.com </span>
             </ul>
           </div>
           <div
@@ -518,18 +544,49 @@
       <p>
         <strong>Phone:</strong> <a href="tel:+370 637 77844">+370 637 77844</a>
       </p>
-      <p>
-        <strong>E-mail:</strong>
-        <a href="mailto:info@nordetanolis.com ">info@nordetanolis.com </a>
-      </p>
     </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom CSS for Popup -->
+    <style>
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 400px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        z-index: 1000;
+      }
+      .popup h2 {
+        margin-top: 0;
+      }
+      .popup .close-btn {
+        display: block;
+        text-align: right;
+      }
+      .popup .close-btn button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
+
+    <!-- JavaScript for Popup -->
     <script>
       function openPopup() {
         document.getElementById("popup").style.display = "block";
@@ -541,6 +598,15 @@
         document.getElementById("popupOverlay").style.display = "none";
       }
     </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
